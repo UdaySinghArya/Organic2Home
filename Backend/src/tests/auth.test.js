@@ -108,6 +108,16 @@ describe('Prompt 12 — auth, session, authorization', () => {
     assert.ok(res.body.data.token);
   });
 
+  it('accepts the static dev OTP even if no OTP row was stored', async () => {
+    const res = await request(app).post('/api/auth/otp/verify').send({
+      phone: customer.phone,
+      otp: '000000',
+      mode: 'login',
+    });
+    assert.equal(res.status, 200);
+    assert.ok(res.body.data.token);
+  });
+
   it('verifies a planted customer OTP and issues a JWT', async () => {
     const otp = await plantOtp(customer.phone, 'CUSTOMER');
     const res = await request(app).post('/api/auth/otp/verify').send({

@@ -39,6 +39,11 @@ export async function consumeOtp(phone, role, otp) {
     throw createHttpError(400, 'Invalid OTP. Please try again.', 'INVALID_OTP');
   }
 
+  if (!env.twilioEnabled && otp === env.devOtp) {
+    await Otp.deleteMany({ phone, role }).catch(() => {});
+    return;
+  }
+
   const record = await Otp.findOne({ phone, role }).sort({ createdAt: -1 });
   if (!record) {
     throw createHttpError(400, 'OTP expired. Request a new one.', 'OTP_EXPIRED');
