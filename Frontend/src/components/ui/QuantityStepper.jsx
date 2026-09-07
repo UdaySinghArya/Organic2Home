@@ -10,8 +10,8 @@ export default function QuantityStepper({
   size = 'md',
   className = '',
 }) {
-  const btn = size === 'lg' ? 'h-11 w-11' : 'h-8 w-8';
-  const text = size === 'lg' ? 'min-w-16 text-[18px]' : 'min-w-6 text-[14px]';
+  const btn = size === 'lg' ? 'h-11 w-11' : size === 'sm' ? 'h-7 w-7' : 'h-8 w-8';
+  const text = size === 'lg' ? 'min-w-16 text-[18px]' : size === 'sm' ? 'min-w-5 text-[13px]' : 'min-w-6 text-[14px]';
 
   return (
     <div className={`inline-flex items-center rounded-full bg-surface-low p-1 ${disabled ? 'opacity-50' : ''} ${className}`}>

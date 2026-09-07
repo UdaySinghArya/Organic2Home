@@ -38,29 +38,29 @@ export default function ProductCard({
   );
 
   return (
-    <article className="flex h-full flex-col justify-between rounded-[20px] border border-outline-soft bg-surface-lowest p-3 shadow-card transition hover:-translate-y-0.5">
-      <div>
+    <article className="flex h-full min-w-0 flex-col justify-between overflow-hidden rounded-[20px] border border-outline-soft bg-surface-lowest p-3 shadow-card transition hover:-translate-y-0.5">
+      <div className="min-w-0">
         {to ? <Link to={to}>{media}</Link> : media}
         <div className="mb-1 flex items-center gap-1">
-          <span className={`h-2 w-2 rounded-full ${inStock ? 'bg-primary' : 'bg-error'}`} />
+          <span className={`h-2 w-2 shrink-0 rounded-full ${inStock ? 'bg-primary' : 'bg-error'}`} />
           <span className={`ks-label ${inStock ? 'text-primary' : 'text-error'}`}>
             {inStock ? 'In stock' : 'Out of stock'}
           </span>
         </div>
         <h3 className="ks-subtitle line-clamp-1">{to ? <Link to={to}>{name}</Link> : name}</h3>
-        {description ? <p className="ks-caption text-outline">{description}</p> : null}
+        {description ? <p className="ks-caption line-clamp-2 text-outline">{description}</p> : null}
       </div>
-      <div className="mt-3 flex items-center justify-between gap-2">
-        <p className="ks-price">
+      <div className="mt-3 flex min-w-0 items-center justify-between gap-1.5">
+        <p className="ks-price min-w-0 truncate">
           ₹{price}
           <span className="ks-caption font-normal text-outline">/{unit}</span>
         </p>
         {!inStock ? (
-          <span className="ks-caption text-outline">Unavailable</span>
+          <span className="ks-caption shrink-0 text-outline">Unavailable</span>
         ) : quantity > 0 ? (
-          <QuantityStepper value={quantity} onChange={onQuantityChange} min={0} />
+          <QuantityStepper className="shrink-0" size="sm" value={quantity} onChange={onQuantityChange} min={0} />
         ) : (
-          <Button variant="cta" className="min-h-8 px-3 text-[13px]" onClick={onAdd}>
+          <Button variant="cta" size="sm" onClick={onAdd}>
             <Icon name="add" size={16} />
             Add
           </Button>
