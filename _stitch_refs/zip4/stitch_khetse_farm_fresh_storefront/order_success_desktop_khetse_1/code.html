@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#ffb59d",
+          "surface-container-highest": "#d9e6d9",
+          "primary-fixed": "#98f7ab",
+          "on-surface-variant": "#3f493f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#f7fff3",
+          "on-secondary-fixed-variant": "#832600",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#fe7443",
+          "surface-bright": "#f0fdf0",
+          "tertiary-fixed-dim": "#f0c03e",
+          "secondary": "#a93707",
+          "primary-container": "#238545",
+          "on-secondary-fixed": "#390c00",
+          "tertiary-container": "#917000",
+          "primary": "#006b31",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#ffdf95",
+          "on-secondary-container": "#651c00",
+          "secondary-fixed": "#ffdbd0",
+          "surface-variant": "#d9e6d9",
+          "on-primary-fixed": "#00210b",
+          "on-tertiary-container": "#fffbff",
+          "surface-container": "#e4f1e5",
+          "on-primary-fixed-variant": "#005225",
+          "inverse-primary": "#7cda91",
+          "on-error-container": "#93000a",
+          "tertiary": "#735800",
+          "on-tertiary-fixed": "#251a00",
+          "inverse-surface": "#28332b",
+          "on-tertiary": "#ffffff",
+          "outline-variant": "#becabc",
+          "surface-dim": "#d1ddd1",
+          "background": "#f0fdf0",
+          "surface-container-low": "#eaf7ea",
+          "error": "#ba1a1a",
+          "surface-container-high": "#dfecdf",
+          "on-surface": "#131e16",
+          "surface-tint": "#006d33",
+          "on-secondary": "#ffffff",
+          "primary-fixed-dim": "#7cda91",
+          "on-error": "#ffffff",
+          "outline": "#6f7a6e",
+          "surface": "#f0fdf0",
+          "on-background": "#131e16",
+          "inverse-on-surface": "#e7f4e7"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "16px",
+          "container-max": "1080px",
+          "space-xs": "8px",
+          "space-4xl": "48px",
+          "gutter-desktop": "24px",
+          "space-sm": "12px",
+          "space-3xl": "40px",
+          "space-lg": "20px",
+          "space-2xs": "4px",
+          "space-2xl": "32px",
+          "gutter-mobile": "16px",
+          "space-xl": "24px"
+        },
+        "fontFamily": {
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "price-num": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-lg": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "17px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "price-num": [
+            "18px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(60,40,10,0.04)]"><div class="h-20 max-w-container-max mx-auto px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Clean modern minimalist emblem logo for KhetSe, featuring a stylized green farm plant sprout with morning golden sun rays above warm soil, flat vector graphics, leaf green #2F8F4E and sun yellow #F5C542 accents, clean white background, friendly organic farm aesthetic.. Design context: - Primary color: #2f8f4e
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-full
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UYmDuoK8U5oonuU_dTJIAG78p1uNkvRSmPgwuTXjmXs5Eyx1uKRO5t_Du4t9Da7u0MVZqIjPuRE4qlcLa6FlZcW_M6c-sC1nbzQi44CcrXx3AOTlr_jTHaacKly6n0wh6Km-pq30n_8gBFYgQSrQlXOLHH-zhoxgr8yiwEXTOWx7QdlWixsEABvhNLy0xUg5sMHP1iltQk2UU0_ht_8hm0Cy5xa4oBZLdothwpnmI3n1a62fXW9OGlx1U8"/><span class="font-headline-md text-headline-md text-primary tracking-tight font-extrabold">KhetSe</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary text-on-primary font-bold rounded-full px-space-md py-space-xs"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="harvest-market" href="#">Harvest Market</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders" href="#">Orders</a><a aria-current="page" class="transition-colors bg-primary text-on-primary font-bold rounded-full px-space-md py-space-xs" data-path="cart" href="#">Cart</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#">Profile</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full items-center justify-center py-space-2xl px-gutter-mobile md:px-gutter-desktop">
+<div class="w-full max-w-[640px] flex flex-col items-center text-center">
+<!-- Leaf Check Brand Illustration -->
+<div class="relative mb-space-lg flex items-center justify-center">
+<div class="w-36 h-36 md:w-40 md:h-40 rounded-full bg-surface-container flex items-center justify-center shadow-[0_8px_30px_rgba(35,133,69,0.12)]">
+<img alt="KhetSe harvest confirmed check badge" class="w-28 h-28 md:w-32 md:h-32 object-contain rounded-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0BZixzaGd29o82UClI7RgfWtrMkVyiTUt6fhp8HHJTLi6G_WumpSSNXt9y8za91FjvtFW85_V3Z_bzMr20dnvcsJQRShJ3p6SzpdxXsIhW-Hg0kJtWNK7nFtt9r1Na-btqPFhcYaUPfZ3TYQaV5RwODrT6uNMxn_oNo1rinQ7yxmdOR4IAaoCdlW7WoyU47uy0CyrnOIHHI1Es1mzv1m_RInnxKI32rnI6U5mFe-5Fw8VFhhPNKfCIA"/>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-tertiary-fixed text-on-tertiary-fixed-variant px-space-sm py-space-2xs rounded-full font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>Kal Aayega</span>
+</div>
+</div>
+<!-- Headline & Order Reference -->
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg md:font-display-lg text-on-surface tracking-tight font-extrabold mb-space-xs">
+      Booked for tomorrow
+    </h1>
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-md py-space-2xs rounded-full mb-space-xl">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary tracking-wide">Order #KS-104</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Pre-harvest locked</span>
+</div>
+<!-- Order Summary Card -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-xl md:p-space-2xl shadow-[0_4px_20px_-2px_rgba(60,40,10,0.06)] text-left flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">receipt_long</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Order summary</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider bg-surface-container px-space-xs py-space-2xs rounded-full">Paid Online</span>
+</div>
+<!-- Item Rows -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between py-space-2xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">nutrition</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">Tomato</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 kg • Desi Vine-ripened</p>
+</div>
+</div>
+<span class="font-price-num text-price-num text-on-surface">₹80</span>
+</div>
+<div class="flex items-center justify-between py-space-2xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">Mango</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 kg • Safeda Farm Orchard</p>
+</div>
+</div>
+<span class="font-price-num text-price-num text-on-surface">₹120</span>
+</div>
+</div>
+<!-- Subtotal & Delivery Details -->
+<div class="bg-surface-container-low rounded-DEFAULT p-space-sm flex flex-col gap-space-2xs text-on-surface-variant">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span>Dusk Harvest Packing</span>
+<span class="text-primary font-semibold">FREE</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span>Sunrise Doorstep Drop</span>
+<span class="text-primary font-semibold">FREE</span>
+</div>
+</div>
+<!-- Total Paid Row -->
+<div class="pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Total paid</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">All taxes &amp; mandi levies included</span>
+</div>
+<span class="font-price-num text-display-lg-mobile text-primary font-extrabold">₹200</span>
+</div>
+<!-- Gentle Morning Harvest Reassurance Banner -->
+<div class="bg-surface-container-low text-primary rounded-DEFAULT p-space-md flex items-center gap-space-sm mt-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0" style="font-variation-settings: 'FILL' 1;">spa</span>
+<p class="font-body-md text-body-md font-semibold leading-snug">
+          We pick this from the field tomorrow morning. Zero warehouse latency.
+        </p>
+</div>
+<!-- Delivery Slot Micro-card -->
+<div class="flex items-center justify-between px-space-sm py-space-xs bg-surface-container rounded-DEFAULT">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Estimated Arrival</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Tomorrow, 6:00 AM – 7:30 AM</span>
+</div>
+</div>
+<!-- Primary Action: Harvest Orange Pill CTA -->
+<div class="w-full flex flex-col items-center gap-space-md">
+<a class="w-full max-w-sm h-12 bg-secondary-container hover:bg-secondary text-on-primary rounded-full font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-[0_8px_20px_-4px_rgba(240,106,58,0.35)] transition-all hover:translate-y-[-2px] active:translate-y-0" data-path="orders" href="#">
+<span>View order</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<!-- Subtle Secondary Link -->
+<a class="inline-flex items-center gap-space-2xs font-label-md text-label-md text-primary hover:text-primary-container transition-colors py-space-xs" data-path="harvest-market" href="#">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+<span>Back to shop</span>
+</a>
+</div>
+<!-- Morning Pledge Note -->
+<div class="mt-space-2xl flex items-center justify-center gap-space-xs text-on-surface-variant opacity-80">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span class="font-body-sm text-body-sm">Dew-fresh guarantee: full refund if not picked fresh</span>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-3xl mt-space-4xl"><div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold">KhetSe</span><span class="font-body-sm text-body-sm text-on-surface-variant">— Picked at dusk, at your door by dawn.</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 KhetSe Produce Co. All morning harvests guaranteed fresh.</div></div></footer></body></html>

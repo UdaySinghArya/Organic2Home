@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "cream": "#FFF8EE",
+            "primary": "#2F8F4E",
+            "primary-hover": "#25733e",
+            "harvest-orange": "#F06A3A",
+            "harvest-orange-hover": "#d95828",
+            "ink": "#131E16",
+            "ink-muted": "#5C6E61",
+            "card-border": "#EFE6D8"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #FFF8EE;
+      }
+    }
+  </style>
+</head>
+<body class="bg-cream font-sans text-ink min-h-screen flex flex-col justify-between antialiased">
+<!-- Desktop Header -->
+<header class="w-full bg-cream/90 backdrop-blur-sm sticky top-0 z-40">
+<div class="max-w-[960px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="KhetSe logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UYmDuoK8U5oonuU_dTJIAG78p1uNkvRSmPgwuTXjmXs5Eyx1uKRO5t_Du4t9Da7u0MVZqIjPuRE4qlcLa6FlZcW_M6c-sC1nbzQi44CcrXx3AOTlr_jTHaacKly6n0wh6Km-pq30n_8gBFYgQSrQlXOLHH-zhoxgr8yiwEXTOWx7QdlWixsEABvhNLy0xUg5sMHP1iltQk2UU0_ht_8hm0Cy5xa4oBZLdothwpnmI3n1a62fXW9OGlx1U8"/>
+<span class="text-xl font-extrabold text-primary tracking-tight">KhetSe</span>
+</div>
+<nav class="flex items-center gap-6 text-[15px]">
+<a class="text-ink-muted hover:text-ink font-semibold transition-colors" href="#">Harvest Market</a>
+<a class="text-ink-muted hover:text-ink font-semibold transition-colors" href="#">Orders</a>
+<a class="bg-[#2F8F4E] text-white font-bold rounded-full px-4 py-1.5 transition-colors" href="#">Cart</a>
+<a class="text-ink-muted hover:text-ink font-semibold transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center">
+<div class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-sm">
+          P
+        </div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full flex-grow flex items-center justify-center px-6 py-16">
+<div class="w-full max-w-[960px] flex justify-center">
+<!-- Centered Calm White Card with 20px corners -->
+<div class="w-full max-w-[500px] bg-white rounded-[20px] p-10 shadow-[0_4px_24px_rgba(47,143,78,0.04)] border border-card-border flex flex-col items-center text-center">
+<!-- Title -->
+<h1 class="text-2xl sm:text-[26px] font-extrabold text-ink tracking-tight mb-3">
+          Payment didn't go through
+        </h1>
+<!-- Reassuring 1 Short Line -->
+<p class="text-[15px] text-ink-muted leading-relaxed mb-6">
+          Your items are reserved for tomorrow's morning delivery.
+        </p>
+<!-- Order Summary Details -->
+<div class="w-full bg-[#FAF5EC] rounded-xl py-3.5 px-4 mb-8 text-center border border-[#EFE5D3]">
+<span class="text-sm font-bold text-ink">Order #KS-104 · ₹200</span>
+<span class="text-sm text-ink-muted ml-1.5">(Tomato 2 kg, Mango 1 kg)</span>
+</div>
+<!-- Actions -->
+<div class="w-full flex flex-col gap-3">
+<!-- Primary Button -->
+<button class="w-full h-12 bg-[#F06A3A] hover:bg-[#d95828] text-white font-bold text-[15px] rounded-full transition-all active:scale-[0.99] cursor-pointer shadow-sm flex items-center justify-center">
+            Try again
+          </button>
+<!-- Secondary Action -->
+<button class="w-full h-12 bg-transparent hover:bg-cream/70 text-primary font-bold text-[15px] rounded-full border border-primary/25 transition-colors cursor-pointer flex items-center justify-center">
+            Pay with cash on delivery
+          </button>
+<!-- Back Link -->
+<div class="mt-3">
+<a class="text-sm font-semibold text-ink-muted hover:text-ink transition-colors" href="#">
+              Back to cart
+            </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Clean Minimalist Footer -->
+<footer class="w-full py-8">
+<div class="max-w-[960px] mx-auto px-6 text-center text-xs text-ink-muted">
+      © 2025 KhetSe Produce Co. Picked at dusk, at your door by dawn.
+    </div>
+</footer>
+</body></html>

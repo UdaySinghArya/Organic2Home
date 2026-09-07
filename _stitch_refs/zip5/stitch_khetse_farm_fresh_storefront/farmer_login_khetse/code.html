@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>KhetSe Farmer Admin</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#dfecdf", "on-background": "#131e16", "primary-container": "#238545", "on-secondary-fixed-variant": "#832600", "surface-dim": "#d1ddd1", "on-secondary": "#ffffff", "error": "#ba1a1a", "on-secondary-fixed": "#390c00", "secondary-fixed": "#ffdbd0", "on-primary": "#ffffff", "tertiary-fixed-dim": "#f0c03e", "tertiary-fixed": "#ffdf95", "secondary-container": "#fe7443", "surface-container": "#e4f1e5", "surface": "#f0fdf0", "secondary-fixed-dim": "#ffb59d", "on-tertiary": "#ffffff", "surface-container-low": "#eaf7ea", "background": "#f0fdf0", "primary-fixed": "#98f7ab", "tertiary": "#735800", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#005225", "inverse-on-surface": "#e7f4e7", "primary-fixed-dim": "#7cda91", "secondary": "#a93707", "on-tertiary-fixed-variant": "#594400", "inverse-primary": "#7cda91", "on-tertiary-container": "#fffbff", "on-primary-container": "#f7fff3", "error-container": "#ffdad6", "on-tertiary-fixed": "#251a00", "surface-tint": "#006d33", "on-error-container": "#93000a", "on-surface": "#131e16", "surface-bright": "#f0fdf0", "surface-variant": "#d9e6d9", "outline-variant": "#becabc", "primary": "#006b31", "tertiary-container": "#917000", "on-primary-fixed": "#00210b", "outline": "#6f7a6e", "surface-container-highest": "#d9e6d9", "inverse-surface": "#28332b", "on-surface-variant": "#3f493f", "on-error": "#ffffff", "on-secondary-container": "#651c00" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-2xl": "32px", "space-lg": "20px", "gutter-desktop": "24px", "space-sm": "12px", "space-4xl": "48px", "space-3xl": "40px", "space-md": "16px", "space-2xs": "4px", "space-xs": "8px", "gutter-mobile": "16px", "container-max": "1080px", "space-xl": "24px" }, fontFamily: { "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "price-num": ["Plus Jakarta Sans"] }, fontSize: { "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "800" }], "display-lg-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "800" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }], "headline-sm": ["17px", { lineHeight: "22px", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-lg": ["15px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "500" }], "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "700" }], "price-num": ["18px", { lineHeight: "22px", fontWeight: "800" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col pt-safe pb-safe"><main class="flex-1 w-full bg-surface px-gutter-mobile flex flex-col justify-center"><div class="flex flex-col w-full max-w-[480px] mx-auto py-space-xl items-center">
+<!-- Brand Emblem / Morning Sunburst Badge -->
+<div class="flex items-center justify-center mb-space-lg">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+</div>
+</div>
+<!-- Header Text -->
+<div class="text-center mb-space-2xl px-space-xs">
+<div class="inline-flex items-center gap-space-2xs bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-sm font-label-sm mb-space-xs tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>Kal Aayega Portal</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-space-xs">
+      Admin login
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-[340px] mx-auto">
+      Enter your registered mobile number to manage tomorrow's harvest.
+    </p>
+</div>
+<!-- Main Card Container -->
+<div class="w-full bg-surface-container-lowest rounded-[20px] p-space-xl shadow-sm mb-space-xl">
+<form class="flex flex-col gap-space-lg" id="farmer-auth-form" onsubmit="event.preventDefault();">
+<!-- Mobile Input Group -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-md text-label-md text-on-surface" for="mobile-number">
+          Mobile number
+        </label>
+<div class="relative flex items-center bg-surface-container-low rounded-full px-space-md py-3 transition-colors focus-within:bg-surface-container">
+<span class="font-label-lg text-label-lg text-on-surface-variant mr-space-xs select-none">
+            +91
+          </span>
+<div class="w-[1px] h-4 bg-outline-variant mr-space-xs"></div>
+<input class="w-full bg-transparent border-none outline-none font-body-lg text-body-lg text-on-surface placeholder:text-outline-variant" id="mobile-number" inputmode="numeric" maxlength="10" name="mobile" placeholder="00000 00000" type="tel" value="98765 43210"/>
+<button class="text-primary font-label-sm text-label-sm px-space-xs py-1 rounded-full hover:bg-surface-container-high transition-colors" type="button">
+            Change
+          </button>
+</div>
+</div>
+<!-- OTP Group -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">
+            Security code
+          </label>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">sms</span>
+            OTP sent via SMS
+          </span>
+</div>
+<!-- 4-digit PIN Tiles -->
+<div class="grid grid-cols-4 gap-space-sm py-space-2xs" id="otp-container">
+<div class="flex flex-col items-center">
+<input class="w-full h-14 text-center font-price-num text-price-num text-on-surface bg-surface-container-low rounded-[16px] outline-none transition-all focus:bg-surface-container-high focus:scale-[1.02]" inputmode="numeric" maxlength="1" type="text" value="8"/>
+</div>
+<div class="flex flex-col items-center">
+<input class="w-full h-14 text-center font-price-num text-price-num text-on-surface bg-surface-container-low rounded-[16px] outline-none transition-all focus:bg-surface-container-high focus:scale-[1.02]" inputmode="numeric" maxlength="1" type="text" value="4"/>
+</div>
+<div class="flex flex-col items-center">
+<input class="w-full h-14 text-center font-price-num text-price-num text-on-surface bg-surface-container-low rounded-[16px] outline-none transition-all focus:bg-surface-container-high focus:scale-[1.02]" inputmode="numeric" maxlength="1" type="text" value="2"/>
+</div>
+<div class="flex flex-col items-center">
+<input class="w-full h-14 text-center font-price-num text-price-num text-on-surface bg-surface-container-low rounded-[16px] outline-none transition-all focus:bg-surface-container-high focus:scale-[1.02]" inputmode="numeric" maxlength="1" type="text" value="9"/>
+</div>
+</div>
+<div class="flex items-center justify-between mt-1 px-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resend OTP in 0:42</span>
+<button class="font-label-md text-label-md text-secondary hover:underline" type="button">
+            Resend
+          </button>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full h-12 bg-secondary-container text-on-secondary hover:opacity-95 active:scale-[0.98] transition-all rounded-full font-label-lg text-label-lg flex items-center justify-center gap-space-xs mt-space-xs shadow-sm" id="verify-btn" type="submit">
+<span>Verify &amp; Enter</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Trust / Farm Origin Micro-card -->
+<div class="w-full bg-surface-container-low rounded-[20px] p-space-md flex items-center gap-space-md mb-space-2xl">
+<div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up warm documentary photo of an Indian farmer holding fresh early morning harvested spinach leaves with natural soil, gentle golden hour sunlight, authentic agricultural scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCItgF3vhZ1c3U2-e3KdkTx7-fZa22IJVa5l86V0rObhBICEucsQmujWZiW64sphz8QFVty9y5rB5IdcQoze-VPxkIUp6uX-qpM3BE1Z8OjDt_3iZNjQmVrrRzvzVFN9bpJjSxeeOttHJcgXmIUhc2lqf9U8U2wg1QMTLYZDJQmcAJhSsFgM8VscxnXLcsq4bFyZ2vyIY5CdPmIrP5k3fXS6J4wq-FmRpdR_1SscdaAY49SwN9KVMOBBQ"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">Direct Soil Link</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">
+        Logged as: <strong>Ramesh Patel</strong> (Nashik Valley, 14 km)
+      </p>
+</div>
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<!-- Return Navigation Link -->
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md py-space-xs px-space-md rounded-full hover:bg-surface-container" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Customer store</span>
+</a>
+</div>
+<script>
+  (function() {
+    const otpInputs = document.querySelectorAll('#otp-container input');
+    otpInputs.forEach((input, idx) => {
+      input.addEventListener('input', (e) => {
+        if (e.target.value.length === 1 && idx < otpInputs.length - 1) {
+          otpInputs[idx + 1].focus();
+        }
+      });
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Backspace' && !e.target.value && idx > 0) {
+          otpInputs[idx - 1].focus();
+        }
+      });
+    });
+  })();
+</script></main></body></html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>KhetSe - Order Confirmed</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "cream": "#FFF8EE",
+            "harvest-orange": "#F06A3A",
+            "farm-green": "#2F8F4E",
+            "primary": "#2F8F4E",
+            "secondary-container": "#F06A3A"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FFF8EE;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#FFF8EE] text-[#131E16] min-h-screen flex flex-col antialiased">
+<!-- Minimal Header -->
+<header class="w-full pt-safe bg-[#FFF8EE]">
+<div class="h-14 px-6 flex items-center justify-between">
+<button aria-label="Go back" class="w-9 h-9 rounded-full bg-white/80 shadow-sm flex items-center justify-center text-[#131E16] hover:bg-white transition-colors" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M15 18l-6-6 6-6"></path>
+</svg>
+</button>
+<span class="font-bold text-[17px] text-[#131E16]">Order confirmation</span>
+<div class="w-9 h-9"></div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col justify-center px-6 pb-24 max-w-md mx-auto w-full">
+<!-- Illustration -->
+<div class="flex justify-center items-center mb-4 mt-2">
+<div class="w-[120px] h-[120px] rounded-full overflow-hidden flex items-center justify-center">
+<img alt="Harvest confirmation" class="w-[120px] h-[120px] object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VOQ3sgzY5czPkGZqn_PKNBVOO2AXqjlzmv2XcJSFlf17mGUFPAZZ1s3Czn7tt4RcL98z4QcYrAnvmLfW_MpL8BBUeHYcy2bUVCUVeGktOuXtA3o3d1D1VRnomz_j4eFI9J3keOQz0UvpRWndv7TMtItJGJKRWVVcrq3FRVnOosex2RPIHcIhQMkeYq-KTEL9-jCG3QBzcPycF_yMolDdAvWlSyXd3aaF5daNRBuU8SraEhBKDPTYt5KFw"/>
+</div>
+</div>
+<!-- Status Headline & Order Pill -->
+<div class="text-center flex flex-col items-center mb-6">
+<h1 class="text-[26px] leading-tight font-extrabold text-[#131E16] tracking-tight mb-2">
+        Booked for tomorrow
+      </h1>
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#2F8F4E]/10 text-[#2F8F4E]">
+<span class="w-2 h-2 rounded-full bg-[#2F8F4E]"></span>
+<span class="text-xs font-bold tracking-wide">Order #KS-104</span>
+</div>
+</div>
+<!-- Clean White 20px Rounded Card -->
+<div class="w-full bg-white rounded-[20px] p-5 shadow-sm mb-6 flex flex-col">
+<!-- One short field note line -->
+<div class="text-xs font-medium text-[#2F8F4E] bg-[#2F8F4E]/10 rounded-xl px-3.5 py-2.5 mb-4 leading-snug text-center">
+        We pick this from the field tomorrow morning
+      </div>
+<!-- Itemized Rows -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between text-sm">
+<span class="font-semibold text-[#131E16]">Tomato 2 kg</span>
+<span class="font-bold text-[#131E16]">₹80</span>
+</div>
+<div class="flex items-center justify-between text-sm">
+<span class="font-semibold text-[#131E16]">Mango 1 kg</span>
+<span class="font-bold text-[#131E16]">₹120</span>
+</div>
+</div>
+<!-- Divider -->
+<div class="w-full h-px bg-[#EFE8DC] my-4"></div>
+<!-- Total Row -->
+<div class="flex items-center justify-between">
+<span class="text-base font-bold text-[#131E16]">Total</span>
+<span class="text-lg font-extrabold text-[#2F8F4E]">₹200</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="w-full flex flex-col items-center gap-3">
+<button class="w-full h-12 bg-[#F06A3A] hover:bg-[#E05929] text-white rounded-full font-bold text-[15px] shadow-sm active:scale-[0.98] transition-all flex items-center justify-center" type="button">
+        View order
+      </button>
+<a class="text-sm font-semibold text-[#2F8F4E] hover:underline py-1 transition-colors" data-path="home" href="#">
+        Back to shop
+      </a>
+</div>
+</main>
+<!-- Clean Bottom Tab Bar: Exactly 4 Clean Labels Only -->
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-[#FFF8EE]/95 backdrop-blur-md border-t border-[#EAE2D5]">
+<div class="flex justify-around items-center h-14 max-w-md mx-auto px-4">
+<a class="text-sm font-medium text-[#7C857E] hover:text-[#131E16] transition-colors" data-path="home" href="#">
+        Home
+      </a>
+<a class="text-sm font-medium text-[#7C857E] hover:text-[#131E16] transition-colors" data-path="cart" href="#">
+        Cart
+      </a>
+<a class="text-sm font-bold text-[#2F8F4E] transition-colors" data-path="orders" href="#">
+        Orders
+      </a>
+<a class="text-sm font-medium text-[#7C857E] hover:text-[#131E16] transition-colors" data-path="profile" href="#">
+        Profile
+      </a>
+</div>
+</nav>
+</body></html>

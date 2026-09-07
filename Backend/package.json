@@ -1,0 +1,25 @@
+{
+  "name": "organic2home-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/app.js && node --check src/server.js",
+    "test": "node --test --test-concurrency=1 src/tests/auth.test.js src/tests/profile-address.test.js src/tests/products.test.js src/tests/cart.test.js src/tests/orders.test.js src/tests/payments.test.js src/tests/harvest.test.js src/tests/farmer-orders.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.2.0",
+    "supertest": "^7.2.2"
+  }
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#ffb59d",
+          "surface-container-highest": "#d9e6d9",
+          "primary-fixed": "#98f7ab",
+          "on-surface-variant": "#3f493f",
+          "on-tertiary-fixed-variant": "#594400",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#f7fff3",
+          "on-secondary-fixed-variant": "#832600",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#fe7443",
+          "surface-bright": "#f0fdf0",
+          "tertiary-fixed-dim": "#f0c03e",
+          "secondary": "#a93707",
+          "primary-container": "#238545",
+          "on-secondary-fixed": "#390c00",
+          "tertiary-container": "#917000",
+          "primary": "#006b31",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#ffdf95",
+          "on-secondary-container": "#651c00",
+          "secondary-fixed": "#ffdbd0",
+          "surface-variant": "#d9e6d9",
+          "on-primary-fixed": "#00210b",
+          "on-tertiary-container": "#fffbff",
+          "surface-container": "#e4f1e5",
+          "on-primary-fixed-variant": "#005225",
+          "inverse-primary": "#7cda91",
+          "on-error-container": "#93000a",
+          "tertiary": "#735800",
+          "on-tertiary-fixed": "#251a00",
+          "inverse-surface": "#28332b",
+          "on-tertiary": "#ffffff",
+          "outline-variant": "#becabc",
+          "surface-dim": "#d1ddd1",
+          "background": "#f0fdf0",
+          "surface-container-low": "#eaf7ea",
+          "error": "#ba1a1a",
+          "surface-container-high": "#dfecdf",
+          "on-surface": "#131e16",
+          "surface-tint": "#006d33",
+          "on-secondary": "#ffffff",
+          "primary-fixed-dim": "#7cda91",
+          "on-error": "#ffffff",
+          "outline": "#6f7a6e",
+          "surface": "#f0fdf0",
+          "on-background": "#131e16",
+          "inverse-on-surface": "#e7f4e7"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "16px",
+          "container-max": "1080px",
+          "space-xs": "8px",
+          "space-4xl": "48px",
+          "gutter-desktop": "24px",
+          "space-sm": "12px",
+          "space-3xl": "40px",
+          "space-lg": "20px",
+          "space-2xs": "4px",
+          "space-2xl": "32px",
+          "gutter-mobile": "16px",
+          "space-xl": "24px"
+        },
+        "fontFamily": {
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "price-num": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-lg": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "17px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "price-num": [
+            "18px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface" style="background-color: rgb(255, 248, 238);"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(60,40,10,0.04)]"><div class="h-20 max-w-container-max mx-auto px-gutter-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Clean modern minimalist emblem logo for KhetSe, featuring a stylized green farm plant sprout with morning golden sun rays above warm soil, flat vector graphics, leaf green #2F8F4E and sun yellow #F5C542 accents, clean white background, friendly organic farm aesthetic.. Design context: - Primary color: #2f8f4e
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-full
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UYmDuoK8U5oonuU_dTJIAG78p1uNkvRSmPgwuTXjmXs5Eyx1uKRO5t_Du4t9Da7u0MVZqIjPuRE4qlcLa6FlZcW_M6c-sC1nbzQi44CcrXx3AOTlr_jTHaacKly6n0wh6Km-pq30n_8gBFYgQSrQlXOLHH-zhoxgr8yiwEXTOWx7QdlWixsEABvhNLy0xUg5sMHP1iltQk2UU0_ht_8hm0Cy5xa4oBZLdothwpnmI3n1a62fXW9OGlx1U8"><span class="font-headline-md text-headline-md text-primary tracking-tight font-extrabold">KhetSe</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary text-on-primary font-bold rounded-full px-space-md py-space-xs"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="harvest-market" href="#">Harvest Market</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders" href="#">Orders</a><a aria-current="page" class="transition-colors bg-primary text-on-primary font-bold rounded-full px-space-md py-space-xs" data-path="cart" href="#">Cart</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#">Profile</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 min-h-screen"><div class="flex flex-col w-full">
+<!-- Harvest Cutoff Top Banner -->
+<section class="w-full bg-tertiary-fixed text-on-tertiary-fixed py-space-xs px-gutter-desktop shadow-sm">
+<div class="max-w-container-max mx-auto flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">wb_twilight</span>
+<span class="font-bold">Daily harvest cutoff: 8:00 PM tonight</span>
+<span class="hidden sm:inline text-on-surface-variant font-normal">• Locking harvest queues across Sonipat &amp; Alwar farms</span>
+</div>
+<div class="flex items-center gap-space-2xs text-label-sm font-label-sm uppercase tracking-wider bg-surface-container-lowest/80 px-space-xs py-0.5 rounded-full text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Orders Open
+      </div>
+</div>
+</section>
+<!-- Main Container -->
+<div class="max-w-container-max mx-auto w-full px-gutter-desktop py-space-2xl" style="max-width: 960px;">
+<!-- Active Cart View -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start" id="activeCartView">
+<!-- Left / Primary Column -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Header & Next Dawn Arrival Badge -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs"><div class="flex items-center justify-between w-full"><div class="flex items-center gap-space-xs"><h1 class="font-headline-lg text-headline-lg text-on-surface">Your cart</h1><span class="bg-surface-container-highest text-on-surface-variant text-label-md font-label-md px-space-xs py-0.5 rounded-full" id="cartCountBadge">2 items</span></div><div class="inline-flex items-center gap-space-xs bg-tertiary-fixed text-on-tertiary-fixed px-space-md py-space-xs rounded-full font-label-md text-label-md font-bold"><span class="material-symbols-outlined text-[18px]">wb_sunny</span><span class="">Kal subah 7–10 AM, farm se</span></div></div></div>
+<!-- Items Card Surface -->
+<div class="bg-surface-container-lowest rounded-lg p-space-xl shadow-sm flex flex-col gap-space-lg">
+<!-- Item 1: Desi Red Tomato -->
+<div class="flex items-center justify-between gap-space-md py-space-xs transition-all duration-300" id="item-tomato">
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 rounded-DEFAULT overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Fresh farm desi tomatoes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1USsJTs1mJDwTx06vyz7U90E3LfosMgosLpCQPB36R0QKgfS3eNLy8XVCE9nu_UnkPSR9T7MkR7Bcs7JkIV-5a28NW8A47uC-rbtrT7uj70NSjmhrkT9Sii_he0BINH4qW9aBkBfIXP6-nM7eNv98UEkwwH8pf65uVRJE6upGkjKbNHrGdsYh0fily0dcmRjzfRj13k-Rsqzczd5pw-gI9s_pCClYFLkXAQc4GOBKym-eCIxZAe42IG82sv">
+<span class="absolute top-1 left-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] px-1.5 py-0.2 rounded-full font-bold">Kal Aayega</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Desi Red Tomato</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ramesh Yadav Farm, Alwar</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-price-num text-price-num text-on-surface" id="tomato-total-price">₹80</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(₹40/kg)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Stepper Pill -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1.5 py-1 gap-space-xs">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="updateQty('tomato', -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface min-w-[2.5rem] text-center" id="tomato-qty-text">2 kg</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity" onclick="updateQty('tomato', 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Trash Button -->
+<button aria-label="Remove item" class="p-2 text-on-surface-variant hover:text-error transition-colors rounded-full hover:bg-error-container/30" onclick="removeItem('tomato')">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+<!-- Subtle Separator -->
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Item 2: Alphonso Mango -->
+<div class="flex items-center justify-between gap-space-md py-space-xs transition-all duration-300" id="item-mango">
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 rounded-DEFAULT overflow-hidden bg-surface-container-low flex-shrink-0">
+<img alt="Fresh tree-ripened Alphonso mangoes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XmmytyItkbZ0UFQAa4pqmSE2XhgieqFPhT5L1V3hGbSQb3ee29T0hsLqO9NCZAI5GJs3mzTcS-kqZEuqH-y2UXp6pHxLAljEEmTLfK7g8R6N64jZN3pilA3H9j7KWXoHJCXLyt8d4nndRrxj5ac67hG3243y9oxh0XZiC3gCjcn4o5s-HN-ce_elDVgOLvlBjbeKEs0_73DkiOZtrzHaFyp405C_iKVKcl6gWwwVCiJRguTS2A4oy1ft1U">
+<span class="absolute top-1 left-1 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] px-1.5 py-0.2 rounded-full font-bold">Kal Aayega</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Alphonso Mango</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Devgad Orchards, Ratnagiri</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-price-num text-price-num text-on-surface" id="mango-total-price">₹120</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(₹120/kg)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Stepper Pill -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1.5 py-1 gap-space-xs">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="updateQty('mango', -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface min-w-[2.5rem] text-center" id="mango-qty-text">1 kg</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 transition-opacity" onclick="updateQty('mango', 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Trash Button -->
+<button aria-label="Remove item" class="p-2 text-on-surface-variant hover:text-error transition-colors rounded-full hover:bg-error-container/30" onclick="removeItem('mango')">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Zero Cold Storage Trust Strip -->
+
+<!-- Demonstration Toggle Button for Previewing Empty Cart State -->
+
+</div>
+<!-- Right Column: Order Summary & Checkout -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-24">
+<div class="bg-surface-container-lowest rounded-lg p-space-xl shadow-sm flex flex-col gap-space-lg"><div class="flex items-center justify-between pb-space-xs border-b border-surface-container"><h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bill Summary</h2><span class="font-body-sm text-on-surface-variant">Free delivery</span></div><div class="flex items-center justify-between pt-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">Total</span><span class="font-display-lg text-headline-lg text-on-surface font-extrabold" id="billTotal">₹200</span></div><button class="w-full bg-secondary-container hover:opacity-95 text-on-primary py-space-md px-space-xl rounded-full font-label-lg text-label-lg shadow-md flex items-center justify-center gap-space-xs transition-transform active:scale-[0.99] cursor-pointer mt-space-sm" id="checkoutBtn"><span id="checkoutLabel" class="">Checkout ₹200</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span></button></div>
+<!-- Harvest Transit Timeline Widget -->
+
+</div>
+</div>
+<!-- Empty Cart Experience (Hidden by default, can toggle) -->
+<div class="hidden flex-col items-center justify-center py-space-4xl text-center max-w-md mx-auto" id="emptyCartView">
+<div class="relative w-56 h-56 mb-space-lg flex items-center justify-center">
+<img alt="Empty woven basket with single green leaf" class="w-full h-full object-contain filter drop-shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVSfP15g92TpSpJlRp_ARuzJN1S-1fVCj0kZYOrAbk16m3ERzX6S-42SEclg5Mmu-6lt8_1VC7Q3x9c3fIXOpIJHLoaejp2JaKzXSCYEvqJVvwp2jgMMA7jyW9ouM3_tjMs-BEet5z5FuAeFwHz3nfsNbtY-7gEmI_ODKijG_4g8XhSVhg4alhSZecniklWgrQpHSTy0IRcqsQ6IHyq1MLbaB9TkfsjYldC5-4SerItjmTz11Ybpyo8w">
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Your cart is empty</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-sm">
+        Add some farm fresh vegetables and fruits harvested fresh for tomorrow dawn.
+      </p>
+<div class="mt-space-xl flex flex-col sm:flex-row items-center gap-space-md w-full justify-center">
+<a class="w-full sm:w-auto bg-surface-container-lowest text-primary font-label-lg text-label-lg px-space-2xl py-space-md rounded-full shadow-sm hover:bg-surface-container-low transition-colors inline-flex items-center justify-center gap-space-xs" href="#">
+<span class="material-symbols-outlined text-[20px]">yard</span>
+<span class="">Shop fresh vegetables</span>
+</a>
+<button class="w-full sm:w-auto text-on-surface-variant font-label-md text-label-md px-space-lg py-space-sm hover:text-on-surface transition-colors" onclick="toggleEmptyCartDemo()">
+          Show active cart
+        </button>
+</div>
+<div class="mt-space-4xl pt-space-xl grid grid-cols-3 gap-space-md w-full text-center">
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">agriculture</span>
+<div class="font-label-sm text-label-sm text-on-surface mt-1">Zero Middlemen</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">schedule</span>
+<div class="font-label-sm text-label-sm text-on-surface mt-1">Dawn Delivery</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-DEFAULT shadow-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div class="font-label-sm text-label-sm text-on-surface mt-1">Direct from Soil</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let cartState = {
+    tomato: { qty: 2, pricePerKg: 40 },
+    mango: { qty: 1, pricePerKg: 120 }
+  };
+
+  function updateQty(itemKey, delta) {
+    if (!cartState[itemKey]) return;
+    const newQty = cartState[itemKey].qty + delta;
+    if (newQty <= 0) {
+      removeItem(itemKey);
+      return;
+    }
+    cartState[itemKey].qty = newQty;
+    renderCart();
+  }
+
+  function removeItem(itemKey) {
+    const el = document.getElementById('item-' + itemKey);
+    if (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(20px)';
+      setTimeout(() => {
+        delete cartState[itemKey];
+        if (el.parentNode) el.remove();
+        renderCart();
+      }, 250);
+    }
+  }
+
+  function renderCart() {
+    const keys = Object.keys(cartState);
+    if (keys.length === 0) {
+      showEmptyView();
+      return;
+    }
+
+    let subtotal = 0;
+    let totalItems = 0;
+
+    keys.forEach(k => {
+      const item = cartState[k];
+      const itemCost = item.qty * item.pricePerKg;
+      subtotal += itemCost;
+      totalItems += 1;
+
+      const qtyEl = document.getElementById(k + '-qty-text');
+      const priceEl = document.getElementById(k + '-total-price');
+      if (qtyEl) qtyEl.innerText = item.qty + ' kg';
+      if (priceEl) priceEl.innerText = '₹' + itemCost;
+    });
+
+    const badge = document.getElementById('cartCountBadge');
+    if (badge) badge.innerText = totalItems + (totalItems === 1 ? ' item' : ' items');
+
+    const subtotalEl = document.getElementById('billSubtotal');
+    const totalEl = document.getElementById('billTotal');
+    const farmerShareEl = document.getElementById('billFarmerShare');
+    const checkoutLabel = document.getElementById('checkoutLabel');
+
+    if (subtotalEl) subtotalEl.innerText = '₹' + subtotal;
+    if (totalEl) totalEl.innerText = '₹' + subtotal;
+    if (farmerShareEl) farmerShareEl.innerText = '₹' + Math.round(subtotal * 0.91);
+    if (checkoutLabel) checkoutLabel.innerText = 'Checkout ₹' + subtotal;
+  }
+
+  function showEmptyView() {
+    document.getElementById('activeCartView').classList.add('hidden');
+    document.getElementById('emptyCartView').classList.remove('hidden');
+    document.getElementById('emptyCartView').classList.add('flex');
+  }
+
+  function showActiveView() {
+    document.getElementById('emptyCartView').classList.add('hidden');
+    document.getElementById('emptyCartView').classList.remove('flex');
+    document.getElementById('activeCartView').classList.remove('hidden');
+  }
+
+  function toggleEmptyCartDemo() {
+    const activeView = document.getElementById('activeCartView');
+    if (activeView.classList.contains('hidden')) {
+      // Restore default demo items if re-opening
+      cartState = {
+        tomato: { qty: 2, pricePerKg: 40 },
+        mango: { qty: 1, pricePerKg: 120 }
+      };
+      location.reload(); // Simple smooth reset to demo fresh state
+    } else {
+      showEmptyView();
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-3xl mt-space-4xl"><div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold">KhetSe</span><span class="font-body-sm text-body-sm text-on-surface-variant">— Picked at dusk, at your door by dawn.</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 KhetSe Produce Co. All morning harvests guaranteed fresh.</div></div></footer>
+
+</body></html>

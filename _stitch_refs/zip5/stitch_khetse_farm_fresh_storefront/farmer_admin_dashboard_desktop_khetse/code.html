@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-high": "#dfecdf",
+          "on-background": "#131e16",
+          "primary-container": "#238545",
+          "on-secondary-fixed-variant": "#832600",
+          "surface-dim": "#d1ddd1",
+          "on-secondary": "#ffffff",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#390c00",
+          "secondary-fixed": "#ffdbd0",
+          "on-primary": "#ffffff",
+          "tertiary-fixed-dim": "#f0c03e",
+          "tertiary-fixed": "#ffdf95",
+          "secondary-container": "#fe7443",
+          "surface-container": "#e4f1e5",
+          "surface": "#f0fdf0",
+          "secondary-fixed-dim": "#ffb59d",
+          "on-tertiary": "#ffffff",
+          "surface-container-low": "#eaf7ea",
+          "background": "#f0fdf0",
+          "primary-fixed": "#98f7ab",
+          "tertiary": "#735800",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed-variant": "#005225",
+          "inverse-on-surface": "#e7f4e7",
+          "primary-fixed-dim": "#7cda91",
+          "secondary": "#a93707",
+          "on-tertiary-fixed-variant": "#594400",
+          "inverse-primary": "#7cda91",
+          "on-tertiary-container": "#fffbff",
+          "on-primary-container": "#f7fff3",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#251a00",
+          "surface-tint": "#006d33",
+          "on-error-container": "#93000a",
+          "on-surface": "#131e16",
+          "surface-bright": "#f0fdf0",
+          "surface-variant": "#d9e6d9",
+          "outline-variant": "#becabc",
+          "primary": "#006b31",
+          "tertiary-container": "#917000",
+          "on-primary-fixed": "#00210b",
+          "outline": "#6f7a6e",
+          "surface-container-highest": "#d9e6d9",
+          "inverse-surface": "#28332b",
+          "on-surface-variant": "#3f493f",
+          "on-error": "#ffffff",
+          "on-secondary-container": "#651c00"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-2xl": "32px",
+          "space-lg": "20px",
+          "gutter-desktop": "24px",
+          "space-sm": "12px",
+          "space-4xl": "48px",
+          "space-3xl": "40px",
+          "space-md": "16px",
+          "space-2xs": "4px",
+          "space-xs": "8px",
+          "gutter-mobile": "16px",
+          "container-max": "1080px",
+          "space-xl": "24px"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "price-num": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "800"
+            }
+          ],
+          "display-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "17px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-lg": [
+            "15px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "24px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "price-num": [
+            "18px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "800"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[960px] mx-auto px-gutter-mobile md:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Clean modern minimalist emblem logo for KhetSe, featuring a stylized green farm plant sprout with morning golden sun rays above warm soil, flat vector graphics, leaf green #2F8F4E and sun yellow #F5C542 accents, clean white background, friendly organic farm aesthetic.. Design context: - Primary color: #2f8f4e
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-full
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UYmDuoK8U5oonuU_dTJIAG78p1uNkvRSmPgwuTXjmXs5Eyx1uKRO5t_Du4t9Da7u0MVZqIjPuRE4qlcLa6FlZcW_M6c-sC1nbzQi44CcrXx3AOTlr_jTHaacKly6n0wh6Km-pq30n_8gBFYgQSrQlXOLHH-zhoxgr8yiwEXTOWx7QdlWixsEABvhNLy0xUg5sMHP1iltQk2UU0_ht_8hm0Cy5xa4oBZLdothwpnmI3n1a62fXW9OGlx1U8"/><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Green Field Farm</span><span class="font-body-sm text-body-sm text-on-surface-variant">KhetSe Farmer Admin</span></div></div><nav class="flex items-center gap-space-xs p-space-2xs bg-surface-container-low rounded-full" data-active-classes="bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-label-md text-label-md rounded-full" data-path="harvest" href="#">Harvest</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="products" href="#">Products</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#">Orders</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16"><div class="max-w-[960px] mx-auto px-gutter-mobile md:px-gutter-desktop py-space-2xl"><div class="flex flex-col w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed self-start shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Sat 6 Sep • Cutoff 8:00 PM</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Pick for tomorrow</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">3 items grouped from 19 customer orders</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs rounded-full shadow-sm">
+<div class="flex items-center gap-space-xs px-space-sm py-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary">LIVE INVENTORY READY</span>
+</div>
+</div>
+</div>
+<section class="flex flex-col gap-space-md mb-space-4xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Harvest Checklist</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">3 pending</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap to mark produce crated</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low overflow-hidden mb-space-md">
+<img alt="Tomato (Desi Vine)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOh7NkJuZ5pTpRfBg4Efc7qyZxZYQuuTFBb7787xRxiMiAj0rO9iXinAMqnYklGFqE9SWGkmxMvXTMX3WbUWg_8iMUT9xH-LYELvtIk-vtufPr5-ni9hlD18UEVNP8w3AwGCgEliDiz03o9bFaZ_iW5SbjCMA-hJg7SrZLC75q4TY7v4l3TG_Jd1n04Eyyz_sYAvPQyJovEvOSiVTBpXaFAHNyexooMmPUi4OPMuCn4CGtkbJcNBJ4zQ"/>
+<div class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>Kal Aayega</span>
+</div>
+</div>
+<div class="flex flex-col mb-space-md">
+<span class="font-body-sm text-body-sm text-primary uppercase font-bold tracking-wider">Desi Vine</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tomato</h3>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">14</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">kg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aggregated from 8 orders</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors cursor-pointer" onclick="togglePacked(this)">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="btn-label">Mark packed</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low overflow-hidden mb-space-md">
+<img alt="Mango (Safeda)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSxkMw36A_g2O6s6wOFIkE0Z9O2eBdcM8Vw-M4hUgKUbDP_DQg2KP_S1ACNIQcRlPgZiauVsQQHCAWpJXm8KXxD9b16hDXVuoyikOJmC0Oe0b85aSTAH8WoPlW_mOqiRRqqxgphqjiy24cKySasyZGmWkLX39t-SWHu_P4EnYY30Kryl3K5iuPcgbMRZHxU8eBeK53r4-uuw-BporVfLvTiLdukDc0tO0cX-0SCd1h0bAIrmsgUd7rUQ"/>
+<div class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>Kal Aayega</span>
+</div>
+</div>
+<div class="flex flex-col mb-space-md">
+<span class="font-body-sm text-body-sm text-primary uppercase font-bold tracking-wider">Safeda</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mango</h3>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">6</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">kg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aggregated from 5 orders</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors cursor-pointer" onclick="togglePacked(this)">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="btn-label">Mark packed</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="relative w-full aspect-square rounded-[16px] bg-surface-container-low overflow-hidden mb-space-md">
+<img alt="Palak (Spinach)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2-7N-YCksnlxrN_isoSu0X9Qa_s4CTHRu_n4D8lHISpKMiw6kSa0D9Rt7XRne48OWR0NN6vnopZZhFEPFzmRSTwbtwx3prWjfquuh6pdhUcbrSC4QkPch9lONzG7BoABqrJrknF_XgeJxSmOgzIUE-FFxbcvj0NvPbk4aQi5hTOOHRD2qv1Xz8mbTf-f2YxNj6oYIx3c97EwV39C4naixcJ08VbFEUIzc1YJBHyUxad9Aj1LZJbsvEw"/>
+<div class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-space-sm py-1 rounded-full shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_sunny</span>
+<span>Kal Aayega</span>
+</div>
+</div>
+<div class="flex flex-col mb-space-md">
+<span class="font-body-sm text-body-sm text-primary uppercase font-bold tracking-wider">Fresh Bundle</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Palak (Spinach)</h3>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface">11</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">bundles</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aggregated from 6 orders</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-surface-container-low text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-colors cursor-pointer" onclick="togglePacked(this)">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span class="btn-label">Mark packed</span>
+</button>
+</div>
+</div>
+<div class="mt-space-md flex flex-col sm:flex-row items-center justify-between bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Batch Dispatch Summary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">31 kg total produce ready for morning route</span>
+</div>
+</div>
+<button class="w-full sm:w-auto h-12 px-space-2xl rounded-full bg-secondary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-space-xs cursor-pointer" id="confirmHarvestBtn" onclick="confirmAllHarvest()">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+<span>Confirm All Harvest Packed</span>
+</button>
+</div>
+</section>
+<section class="flex flex-col gap-space-md mb-space-3xl">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Orders Preview</h2>
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">View all 19 orders →</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">agriculture</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">#KS-104</span>
+<span class="text-outline">•</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Riya Sharma</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 items (Tomato 2kg, Palak 1 bdl, Mango 1kg)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<span class="px-space-md py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Harvesting
+          </span>
+<button class="h-10 px-space-lg rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary transition-all flex items-center gap-space-2xs cursor-pointer" onclick="markOutForDelivery(this)">
+<span class="material-symbols-outlined text-[16px]">moped</span>
+<span>Out for delivery</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">#KS-098</span>
+<span class="text-outline">•</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Sunita Devi</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Palak 2 bundles</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<span class="px-space-md py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Delivered
+          </span>
+<div class="h-10 px-space-lg rounded-full bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center opacity-60">
+            Completed
+          </div>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col sm:flex-row items-center justify-between py-space-md px-space-lg bg-surface-container-lowest rounded-[20px] shadow-sm gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-body-md text-body-md text-on-surface">Farmer Profile: <strong class="text-on-surface font-label-md">Harpreet Singh</strong> (Plot 4B, Samana)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="font-label-md text-label-md text-primary hover:underline" href="#">Edit Farm Profile</a>
+<span class="text-outline">•</span>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">logout</span>
+        Log out
+      </a>
+</div>
+</div>
+</div>
+<script>
+  function togglePacked(btn) {
+    const isPacked = btn.classList.contains('bg-primary');
+    const label = btn.querySelector('.btn-label');
+    const icon = btn.querySelector('.material-symbols-outlined');
+    
+    if (!isPacked) {
+      btn.classList.remove('bg-surface-container-low', 'text-primary');
+      btn.classList.add('bg-primary', 'text-on-primary');
+      label.textContent = 'Packed';
+      icon.textContent = 'verified';
+    } else {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-low', 'text-primary');
+      label.textContent = 'Mark packed';
+      icon.textContent = 'check_circle';
+    }
+  }
+
+  function confirmAllHarvest() {
+    const buttons = document.querySelectorAll('button[onclick="togglePacked(this)"]');
+    buttons.forEach(btn => {
+      const label = btn.querySelector('.btn-label');
+      const icon = btn.querySelector('.material-symbols-outlined');
+      btn.classList.remove('bg-surface-container-low', 'text-primary');
+      btn.classList.add('bg-primary', 'text-on-primary');
+      label.textContent = 'Packed';
+      icon.textContent = 'verified';
+    });
+    
+    const mainBtn = document.getElementById('confirmHarvestBtn');
+    mainBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span>All Crates Ready for Morning Dispatch</span>';
+    mainBtn.classList.remove('bg-secondary-container');
+    mainBtn.classList.add('bg-primary');
+  }
+
+  function markOutForDelivery(btn) {
+    btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>Dispatched</span>';
+    btn.classList.remove('bg-primary-container', 'hover:bg-primary');
+    btn.classList.add('bg-surface-container-low', 'text-primary', 'pointer-events-none');
+    
+    const statusChip = btn.parentElement.querySelector('span');
+    if (statusChip) {
+      statusChip.textContent = 'In Transit';
+      statusChip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      statusChip.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+    }
+  }
+</script></div></main><footer class="w-full bg-surface-container-low mt-space-4xl"><div class="max-w-[960px] mx-auto px-gutter-mobile md:px-gutter-desktop py-space-2xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface">KhetSe Farmer Hub</span><span class="font-body-sm text-body-sm text-on-surface-variant">• Fresh From Soil to Doorstep</span></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2024 KhetSe Direct. All rights reserved.</div></div></footer></body></html>

@@ -1,0 +1,24 @@
+---
+description: Stitch screen map and KhetSe product rules
+alwaysApply: true
+---
+
+# KhetSe Screen Map
+
+Compare UI to `_stitch_refs/zip3|zip4|zip5/stitch_khetse_farm_fresh_storefront/<folder>/screen.png`.
+
+**Zip 3 — Auth + store + cart:** welcome_to_khetse, login_khetse, register_khetse, otp_verification_khetse, customer_home_khetse, product_detail_mobile_tomato_in_stock, product_detail_mobile_tomato_out_of_stock, product_detail_desktop_tomato_khetse, your_cart_khetse, your_cart_desktop_khetse, empty_cart_khetse
+
+**Zip 4 — Checkout + orders:** add_address_khetse, add_address_desktop_khetse, place_order_khetse, place_order_desktop_khetse, payment_failed_khetse_1/2, payment_failed_desktop_khetse_1/2, order_success_khetse_1/2, order_success_desktop_khetse_1/2, your_orders_khetse, your_orders_desktop_khetse, empty_orders_khetse, order_detail_ks_104_khetse
+
+**Zip 5 — Account + farmer:** profile_khetse, account_profile_desktop_khetse, saved_addresses_khetse, help_khetse, log_out_confirm_khetse, farmer_login_khetse, farmer_admin_dashboard_desktop_khetse, pick_for_tomorrow_khetse_farmer, products_khetse_farmer, add_or_edit_product_khetse_farmer, orders_khetse_farmer, order_detail_ks_104_khetse_farmer, farmer_profile_logout_khetse
+
+# Product rules
+
+- Stack: Node.js + Express + MongoDB (backend), React (frontend)
+- Roles: CUSTOMER (users collection) | ADMIN (admins collection; farmer = admin)
+- Auth: customer `/api/auth/otp/*`, admin `/api/auth/admin/*`; phone unique across both tables
+- OTP is printed in the terminal until Twilio is enabled
+- Backend owns price, stock, totals. Never trust frontend money/qty.
+- Order status: PLACED → CONFIRMED → HARVESTING → PACKED → OUT_FOR_DELIVERY → DELIVERED | CANCELLED
+- Harvest quantities come from real orders, not Stitch sample numbers

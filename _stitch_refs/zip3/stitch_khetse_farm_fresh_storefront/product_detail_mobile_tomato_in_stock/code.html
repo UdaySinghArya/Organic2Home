@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail - Tomato (In Stock) - KhetSe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          canvas: '#FFF8EE',
+          ink: '#1F2A22',
+          leaf: '#2F8F4E',
+          harvest: '#F06A3A',
+          sun: '#F5C542'
+        },
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body {
+    background-color: #FFF8EE;
+    color: #1F2A22;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+</head>
+<body class="min-h-screen bg-canvas text-ink flex flex-col justify-between max-w-[390px] mx-auto relative pb-28">
+
+  <!-- Top Navigation Bar -->
+  <header class="pt-6 px-5 pb-3 flex items-center justify-between sticky top-0 bg-canvas/90 backdrop-blur-md z-30">
+    <button aria-label="Go back" class="w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-sm border border-stone-100 hover:bg-stone-50 transition-colors">
+      <svg class="w-5 h-5 text-ink" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <div class="flex items-center gap-2">
+      <span class="text-xs font-bold tracking-wider text-leaf uppercase bg-leaf/10 px-3 py-1 rounded-full">One Farmer Direct</span>
+    </div>
+    <div class="w-11"></div> <!-- Spacer for optical balance -->
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-5 pt-1 space-y-5">
+    
+    <!-- Big Produce Image Card -->
+    <div class="bg-white rounded-[20px] p-5 shadow-sm border border-amber-900/5 relative overflow-hidden flex flex-col items-center">
+      <!-- Sun Badge -->
+      <div class="absolute top-4 left-4 z-10 bg-sun text-ink font-bold text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm">
+        <svg class="w-3.5 h-3.5 text-amber-900" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+        </svg>
+        Kal farm se aayega · 6 Sep
+      </div>
+      
+      <div class="w-full aspect-square rounded-[16px] overflow-hidden bg-[#f9f5ec] flex items-center justify-center relative my-2">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1USsJTs1mJDwTx06vyz7U90E3LfosMgosLpCQPB36R0QKgfS3eNLy8XVCE9nu_UnkPSR9T7MkR7Bcs7JkIV-5a28NW8A47uC-rbtrT7uj70NSjmhrkT9Sii_he0BINH4qW9aBkBfIXP6-nM7eNv98UEkwwH8pf65uVRJE6upGkjKbNHrGdsYh0fily0dcmRjzfRj13k-Rsqzczd5pw-gI9s_pCClYFLkXAQc4GOBKym-eCIxZAe42IG82sv" alt="Fresh Farm Tomato" class="w-full h-full object-cover">
+      </div>
+      
+      
+    </div>
+
+    <!-- Title & Attributes Card -->
+    <div class="bg-white rounded-[20px] p-6 shadow-sm border border-amber-900/5 space-y-3">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight text-ink">Tomato</h1>
+        <p class="text-base font-semibold text-stone-600 mt-0.5">Vegetable · ₹40 / kg</p>
+      </div>
+
+      <p class="text-sm font-medium text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+        Picked tomorrow morning from our field
+      </p>
+
+      <!-- Provenance note -->
+      
+    </div>
+
+    <!-- Quantity Stepper Card -->
+    <div class="bg-white rounded-[20px] p-5 shadow-sm border border-amber-900/5 flex items-center justify-between">
+      <div class="space-y-0.5">
+        <span class="text-xs font-bold text-stone-500 uppercase tracking-wider">Select Weight</span>
+        <p class="text-xs text-stone-400">Min 0.5 kg</p>
+      </div>
+
+      <!-- Stepper Controls -->
+      <div class="flex items-center bg-[#F7F3EB] rounded-full p-1.5 gap-4">
+        <button id="step-minus" class="w-11 h-11 rounded-full bg-white text-ink font-bold text-xl flex items-center justify-center shadow-sm hover:bg-stone-50 active:scale-95 transition-all">
+          −
+        </button>
+        <div class="w-16 text-center">
+          <span id="step-val" class="text-xl font-extrabold text-ink">1 kg</span>
+        </div>
+        <button id="step-plus" class="w-11 h-11 rounded-full bg-white text-ink font-bold text-xl flex items-center justify-center shadow-sm hover:bg-stone-50 active:scale-95 transition-all">
+          +
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Sticky Single Harvest Orange Primary CTA -->
+  <div class="fixed bottom-0 left-0 right-0 max-w-[390px] mx-auto p-4 bg-canvas/95 backdrop-blur-md border-t border-amber-900/5 z-40">
+    <button class="w-full py-4 rounded-full bg-harvest text-white font-bold text-lg flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20 active:scale-[0.99] transition-transform">
+      <span class="">Add 1 kg · ₹40</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const minusBtn = document.getElementById('step-minus');
+    const plusBtn = document.getElementById('step-plus');
+    const stepVal = document.getElementById('step-val');
+    let qty = 1.0;
+    
+    minusBtn.addEventListener('click', () => {
+      if (qty > 0.5) {
+        qty -= 0.5;
+        stepVal.textContent = qty + ' kg';
+      }
+    });
+
+    plusBtn.addEventListener('click', () => {
+      qty += 0.5;
+      stepVal.textContent = qty + ' kg';
+    });
+  </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,23 @@
+---
+description: Match KhetSe Stitch/Figma UI exactly. Never redesign.
+alwaysApply: true
+---
+
+# KhetSe Stitch Design Lock
+
+Visual source of truth is `_stitch_refs/` (`screen.png` + `DESIGN.md`). Do not invent a new look.
+
+- Font: **Plus Jakarta Sans** (400–800) + Material Symbols Outlined
+- Canvas: `#FFF8EE` (override Tailwind `surface` `#f0fdf0` on page backgrounds)
+- Primary / leaf: `#006b31` (prose also uses `#2F8F4E` for brand marks)
+- Primary container: `#238545`
+- CTA / harvest orange: `#fe7443` / `#F06A3A` (`secondary-container`) — primary buttons only
+- Deep rust secondary: `#a93707`
+- Sun yellow / Kal Aayega: `#ffdf95` / `#F5C542`
+- Ink text: `#131e16` / `#1F2A22`
+- Cards: white, **20px** radius, `1px #F0E6D6`, warm umber shadow
+- Buttons/chips/search: **pill** `9999px`; CTA min-height 48px
+- Mobile gutters 16px; desktop max-width **1080px**; catalog 2-col mobile, 3–4 col desktop
+- Bottom nav on customer mobile; do not stretch mobile layout to desktop
+
+Before any UI page: open the matching `_stitch_refs/**/screen.png` and match spacing, type, color, radius, icons. Stitch `code.html` is a visual reference only — never ship it as a route. No mock screenshot data (no hardcoded KS-104 / tomato prices as production truth).

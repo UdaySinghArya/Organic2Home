@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: "#FFF8EE",
+              green: "#006b31",
+              "green-light": "#E8F5E9",
+              orange: "#F06A3A",
+              "orange-light": "#FFF0EA",
+              surface: "#FFFFFF",
+              text: "#1A221A",
+              muted: "#717D71",
+              border: "#EFE8DC"
+            }
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: #FFF8EE;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      .pb-safe {
+        padding-bottom: max(env(safe-area-inset-bottom, 0px), 24px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-text font-sans antialiased min-h-screen flex flex-col items-center">
+<div class="w-full max-w-md min-h-screen flex flex-col px-5 pt-safe pb-safe">
+<!-- Top Bar with Back Arrow and Title -->
+<header class="flex items-center justify-between py-4">
+<div class="flex items-center gap-3">
+<button aria-label="Go back" class="w-10 h-10 rounded-full flex items-center justify-center text-brand-text hover:bg-black/5 active:scale-95 transition" onclick="history.back()">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold tracking-tight text-brand-text">Order #KS-104</h1>
+</div>
+<span class="text-lg font-extrabold text-brand-green">₹200</span>
+</header>
+<!-- Main Content Flow -->
+<main class="flex-1 flex flex-col gap-4 mt-1">
+<!-- Note Chip -->
+<div class="self-start inline-flex items-center gap-2 bg-[#E8F5E9] text-brand-green px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-brand-green animate-pulse"></span>
+        Picked from field tomorrow
+      </div>
+<!-- 1. Simple Status Stepper Card -->
+<section class="bg-white rounded-[20px] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-[#F3ECE0]">
+<h2 class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-4">Harvest Status</h2>
+<div class="relative pl-6 space-y-5">
+<!-- Connecting track line -->
+<div class="absolute left-2.5 top-2.5 bottom-2.5 w-[2px] bg-[#EAE3D6]"></div>
+<!-- Step 1: Placed (Completed) -->
+<div class="relative flex items-center gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-brand-green text-white flex items-center justify-center ring-4 ring-white">
+<span class="material-symbols-outlined text-[13px] font-bold">check</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-brand-text leading-tight">Order Placed</p>
+</div>
+</div>
+<!-- Step 2: Harvesting (Active) -->
+<div class="relative flex items-center gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-brand-orange text-white flex items-center justify-center ring-4 ring-[#FFF0EA]">
+<span class="w-2 h-2 rounded-full bg-white"></span>
+</div>
+<div>
+<p class="text-sm font-bold text-brand-orange leading-tight">Harvesting (active)</p>
+</div>
+</div>
+<!-- Step 3: Out for Delivery -->
+<div class="relative flex items-center gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-[#EAE3D6] text-white flex items-center justify-center ring-4 ring-white"></div>
+<div>
+<p class="text-sm font-medium text-brand-muted leading-tight">Out for delivery</p>
+</div>
+</div>
+<!-- Step 4: Delivered -->
+<div class="relative flex items-center gap-3">
+<div class="absolute -left-6 w-5 h-5 rounded-full bg-[#EAE3D6] text-white flex items-center justify-center ring-4 ring-white"></div>
+<div>
+<p class="text-sm font-medium text-brand-muted leading-tight">Delivered</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Produce Items Card -->
+<section class="bg-white rounded-[20px] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-[#F3ECE0]">
+<h2 class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-3">Field Basket</h2>
+<div class="divide-y divide-[#F6EFE5]">
+<!-- Item 1: Tomato -->
+<div class="flex items-center justify-between py-3 first:pt-1">
+<div class="flex items-center gap-3">
+<img alt="Desi Vine Tomato" class="w-11 h-11 rounded-xl object-cover border border-[#F3ECE0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW7Sje_tkTMxM7ZK5sGEqBLV5-QBVNbV_Cj4jiGwh5sAT0PE5r3b7JMgnFZZOuC1ANx2xhZzUdlpQT60ecxpvbPwrMTJxIyorvF9WUbGJy_Ef5GUThEBwYDzyLN-_E26yBxJQbo32UaHhlef7WgN33E12V1TQVJHRd2kbFPLn9RTypFH2w_VyBoTl6SJnGVzFf25wZjx4b3Wsq8e3FANloZtzZ-4Zg89EKXPyqRzyU3bhP4aPVLVcxBQ"/>
+<div>
+<p class="text-sm font-semibold text-brand-text">Desi Vine Tomato</p>
+<p class="text-xs text-brand-muted">2 kg</p>
+</div>
+</div>
+<span class="text-sm font-bold text-brand-text">₹80</span>
+</div>
+<!-- Item 2: Mango -->
+<div class="flex items-center justify-between py-3">
+<div class="flex items-center gap-3">
+<img alt="Safeda Mango" class="w-11 h-11 rounded-xl object-cover border border-[#F3ECE0]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KgsMUGzVWidXxHMkbVZzbPZg305fldN92yxK3hplUEnXh1GFUahnqwVRB8Bk5-OtxUCVH897Zm2PKGoydij9k_aAV1MzVj-72P7sBkorjfClaDVX14wXHA3hKezReX9tYzUWU4avWiEXkTtgxPQ5OSOTnoi3hkfEev6fyffw7P1mLsTpyLRRbZj4hwBy9GKvuQFdpk9IDXSm8tca6eNrTzAP6iSzKB-6OMI5xphFgDMIq-8Z67a1XA"/>
+<div>
+<p class="text-sm font-semibold text-brand-text">Safeda Mango</p>
+<p class="text-xs text-brand-muted">1 kg</p>
+</div>
+</div>
+<span class="text-sm font-bold text-brand-text">₹120</span>
+</div>
+</div>
+<!-- Total Paid -->
+<div class="pt-3.5 mt-1 border-t border-[#F3ECE0] flex items-center justify-between">
+<div>
+<span class="text-sm font-bold text-brand-text">Total</span>
+<p class="text-xs text-brand-green font-medium">Paid via UPI</p>
+</div>
+<span class="text-lg font-extrabold text-brand-text">₹200</span>
+</div>
+</section>
+<!-- 3. Address Card -->
+<section class="bg-white rounded-[20px] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.03)] border border-[#F3ECE0]">
+<h2 class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-1.5">Delivery Details</h2>
+<p class="text-sm font-semibold text-brand-text">Home · 12 Green Lane, village</p>
+<p class="text-xs text-brand-muted mt-0.5">Arrival tomorrow 7–10 AM</p>
+</section>
+<!-- 4. Primary Harvest Orange Button & Secondary Action -->
+<div class="mt-4 mb-2 flex flex-col gap-2">
+<button class="w-full h-12 rounded-full bg-[#F06A3A] text-white font-semibold text-sm tracking-wide shadow-[0_4px_14px_rgba(240,106,58,0.3)] active:scale-[0.98] transition" type="button">
+          Need help?
+        </button>
+<button class="w-full py-2.5 text-center text-xs font-medium text-brand-muted hover:text-brand-text transition" onclick="history.back()" type="button">
+          Return to fresh market catalog
+        </button>
+</div>
+</main>
+</div>
+</body></html>

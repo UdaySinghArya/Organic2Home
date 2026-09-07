@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail Desktop - Tomato (In Stock & Out of Stock) - KhetSe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          canvas: '#FFF8EE',
+          ink: '#1F2A22',
+          leaf: '#2F8F4E',
+          harvest: '#F06A3A',
+          sun: '#F5C542'
+        },
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body {
+    background-color: #FFF8EE;
+    color: #1F2A22;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+</head>
+<body class="min-h-screen bg-canvas text-ink flex flex-col">
+
+  <!-- Desktop Minimal Header -->
+  <header class="w-full max-w-7xl mx-auto px-8 pt-8 pb-4 flex items-center justify-between">
+    <div class="flex items-center gap-6">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://lh3.googleusercontent.com/aida/AEtjO1UYmDuoK8U5oonuU_dTJIAG78p1uNkvRSmPgwuTXjmXs5Eyx1uKRO5t_Du4t9Da7u0MVZqIjPuRE4qlcLa6FlZcW_M6c-sC1nbzQi44CcrXx3AOTlr_jTHaacKly6n0wh6Km-pq30n_8gBFYgQSrQlXOLHH-zhoxgr8yiwEXTOWx7QdlWixsEABvhNLy0xUg5sMHP1iltQk2UU0_ht_8hm0Cy5xa4oBZLdothwpnmI3n1a62fXW9OGlx1U8" alt="KhetSe Logo" class="w-10 h-10 object-contain rounded-full bg-white p-1 border border-stone-200">
+        <span class="text-2xl font-extrabold tracking-tight text-ink">KhetSe</span>
+      </a>
+      <span class="text-xs font-bold uppercase tracking-wider text-leaf bg-leaf/10 px-3 py-1 rounded-full">Single Farmer Direct</span>
+    </div>
+
+    <!-- Right utility -->
+    <div class="flex items-center gap-4">
+      <div class="bg-sun/40 text-ink font-semibold text-xs px-4 py-2 rounded-full border border-amber-300 flex items-center gap-2">
+        <span>⏰ Daily harvest cutoff: <strong>8:00 PM tonight</strong></span>
+      </div>
+      <div class="flex items-center gap-2 text-sm font-semibold text-stone-700 bg-white px-4 py-2 rounded-full border border-stone-100 shadow-sm">
+        <span>Cart</span>
+        <span class="w-5 h-5 rounded-full bg-harvest text-white text-xs font-bold flex items-center justify-center">2</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Dual Comparison Layout on 1440px Canvas -->
+  <main class="w-full max-w-7xl mx-auto px-8 py-6 space-y-10 flex-1">
+    
+    <!-- Breadcrumb & Back bar -->
+    <div class="flex items-center justify-between">
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-stone-700 hover:text-ink bg-white px-4 py-2 rounded-full border border-stone-200/80 shadow-sm transition-colors">
+        <svg class="w-4 h-4 text-ink" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span>Back to Vegetables</span>
+      </a>
+
+      <!-- State Toggle pills for desktop showcase -->
+      <div class="flex items-center gap-2 bg-stone-200/60 p-1 rounded-full text-xs font-bold">
+        <button id="show-instock" class="px-4 py-1.5 rounded-full bg-white text-ink shadow-sm transition-all">Active State (In Stock)</button>
+        <button id="show-outofstock" class="px-4 py-1.5 rounded-full text-stone-600 hover:text-ink transition-all">Out of Stock Variant</button>
+      </div>
+    </div>
+
+    <!-- Active In-Stock Container -->
+    <div id="instock-container" class="grid grid-cols-12 gap-8 items-start">
+      
+      <!-- Left: Big Produce Illustration / Photo Card (7 cols) -->
+      <div class="col-span-7 bg-white rounded-[20px] p-8 shadow-sm border border-amber-900/5 relative">
+        <div class="absolute top-6 left-6 z-10 bg-sun text-ink font-bold text-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-sm">
+          <svg class="w-4 h-4 text-amber-900" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+          </svg>
+          Kal farm se aayega · 6 Sep
+        </div>
+
+        <div class="w-full aspect-[4/3] rounded-[16px] overflow-hidden bg-[#faf6ee] flex items-center justify-center my-4">
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1USsJTs1mJDwTx06vyz7U90E3LfosMgosLpCQPB36R0QKgfS3eNLy8XVCE9nu_UnkPSR9T7MkR7Bcs7JkIV-5a28NW8A47uC-rbtrT7uj70NSjmhrkT9Sii_he0BINH4qW9aBkBfIXP6-nM7eNv98UEkwwH8pf65uVRJE6upGkjKbNHrGdsYh0fily0dcmRjzfRj13k-Rsqzczd5pw-gI9s_pCClYFLkXAQc4GOBKym-eCIxZAe42IG82sv" alt="Fresh Farm Tomato" class="w-full h-full object-cover">
+        </div>
+
+        <div class="flex items-center justify-between border-t border-stone-100 pt-4 text-xs font-semibold text-stone-600">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-leaf"></span>
+            <span>Harvested directly upon order lock at 8:00 PM</span>
+          </div>
+          <span class="text-stone-400">Zero Cold Storage Guaranteed</span>
+        </div>
+      </div>
+
+      <!-- Right: Content & Action Panel (5 cols) -->
+      <div class="col-span-5 space-y-6">
+        
+        <!-- Info Card -->
+        <div class="bg-white rounded-[20px] p-8 shadow-sm border border-amber-900/5 space-y-5">
+          <div>
+            <div class="inline-flex items-center gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-leaf bg-leaf/10 px-2.5 py-0.5 rounded-full">Field Fresh</span>
+            </div>
+            <h1 class="text-4xl font-extrabold text-ink tracking-tight">Tomato</h1>
+            <p class="text-xl font-bold text-stone-600 mt-1">Vegetable · ₹40 / kg</p>
+          </div>
+
+          <p class="text-base text-stone-600 leading-relaxed border-t border-stone-100 pt-4">
+            Picked tomorrow morning from our field
+          </p>
+
+          <div class="bg-canvas rounded-xl p-4 space-y-2 text-xs text-stone-700">
+            <div class="flex items-center gap-2 font-bold text-ink">
+              <span class="w-5 h-5 rounded-full bg-leaf text-white flex items-center justify-center text-[10px]">✓</span>
+              <span>Direct from Ramesh's Field (Sonipat)</span>
+            </div>
+            <p class="text-stone-500 pl-7">Soil-to-kitchen turnaround in under 14 hours. No middlemen mandi sorting.</p>
+          </div>
+        </div>
+
+        <!-- Quantity & Purchase Card -->
+        <div class="bg-white rounded-[20px] p-8 shadow-sm border border-amber-900/5 space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold text-stone-400 uppercase tracking-wider block">Quantity</span>
+              <span class="text-xs text-stone-500">Min order 0.5 kg</span>
+            </div>
+
+            <!-- Large Stepper -->
+            <div class="flex items-center bg-[#F7F3EB] rounded-full p-1.5 gap-4">
+              <button id="desk-minus" class="w-12 h-12 rounded-full bg-white text-ink font-bold text-2xl flex items-center justify-center shadow-sm hover:bg-stone-50 active:scale-95 transition-all">
+                −
+              </button>
+              <div class="w-20 text-center">
+                <span id="desk-val" class="text-2xl font-extrabold text-ink">1 kg</span>
+              </div>
+              <button id="desk-plus" class="w-12 h-12 rounded-full bg-white text-ink font-bold text-2xl flex items-center justify-center shadow-sm hover:bg-stone-50 active:scale-95 transition-all">
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- The ONLY Primary Harvest Orange Pill Button -->
+          <button id="desk-cta" class="w-full py-5 rounded-full bg-harvest text-white font-bold text-lg flex items-center justify-center gap-3 shadow-lg shadow-orange-500/25 hover:brightness-105 active:scale-[0.99] transition-all">
+            <span>Add 1 kg · ₹40</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Out of Stock Showcase Container (Side-by-side or toggled preview) -->
+    <div id="outofstock-container" class="border-t border-stone-200 pt-10 mt-8 space-y-6">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 rounded-full bg-stone-400"></span>
+        <h2 class="text-xl font-bold text-ink">Out-of-Stock State Preview</h2>
+        <span class="text-xs bg-stone-200 text-stone-600 px-3 py-1 rounded-full font-bold">Same layout · Gray stepper & disabled action</span>
+      </div>
+
+      <div class="grid grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Image Card (Dimmed & Grayed) -->
+        <div class="col-span-7 bg-white rounded-[20px] p-8 shadow-sm border border-stone-200 relative">
+          <!-- Back tomorrow badge -->
+          <div class="absolute top-6 left-6 z-10 bg-stone-200 text-stone-700 font-bold text-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-stone-500"></span>
+            Back tomorrow
+          </div>
+
+          <div class="w-full aspect-[4/3] rounded-[16px] overflow-hidden bg-stone-100 flex items-center justify-center my-4">
+            <img src="https://lh3.googleusercontent.com/aida/AEtjO1USsJTs1mJDwTx06vyz7U90E3LfosMgosLpCQPB36R0QKgfS3eNLy8XVCE9nu_UnkPSR9T7MkR7Bcs7JkIV-5a28NW8A47uC-rbtrT7uj70NSjmhrkT9Sii_he0BINH4qW9aBkBfIXP6-nM7eNv98UEkwwH8pf65uVRJE6upGkjKbNHrGdsYh0fily0dcmRjzfRj13k-Rsqzczd5pw-gI9s_pCClYFLkXAQc4GOBKym-eCIxZAe42IG82sv" alt="Fresh Farm Tomato" class="w-full h-full object-cover grayscale opacity-70">
+          </div>
+
+          <div class="flex items-center justify-between border-t border-stone-100 pt-4 text-xs font-semibold text-stone-500">
+            <span>Daily harvest allocation full for Ramesh's Polyhouse</span>
+            <span class="text-stone-400">Next orders open 8:00 AM</span>
+          </div>
+        </div>
+
+        <!-- Right: Out-of-Stock Controls -->
+        <div class="col-span-5 space-y-6">
+          <div class="bg-white rounded-[20px] p-8 shadow-sm border border-stone-200 space-y-5">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-stone-400 bg-stone-100 px-2.5 py-0.5 rounded-full">Unavailable</span>
+              <h3 class="text-4xl font-extrabold text-stone-700 tracking-tight mt-2">Tomato</h3>
+              <p class="text-xl font-bold text-stone-500 mt-1">Vegetable · ₹40 / kg</p>
+            </div>
+
+            <p class="text-base text-stone-500 leading-relaxed border-t border-stone-100 pt-4">
+              Picked tomorrow morning from our field
+            </p>
+
+            <div class="bg-stone-50 rounded-xl p-4 text-xs text-stone-600 border border-stone-100">
+              <p class="font-bold text-stone-800">Fresh harvest capacity reached for tomorrow morning.</p>
+              <p class="mt-1 text-stone-500">We do not source warehouse surplus or cold-storage lots.</p>
+            </div>
+          </div>
+
+          <!-- Disabled controls card -->
+          <div class="bg-white rounded-[20px] p-8 shadow-sm border border-stone-200 space-y-6 opacity-75">
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold text-stone-400 uppercase tracking-wider block">Quantity</span>
+                <span class="text-xs text-stone-400">Back tomorrow</span>
+              </div>
+
+              <!-- Gray Stepper -->
+              <div class="flex items-center bg-stone-100 rounded-full p-1.5 gap-4">
+                <button disabled class="w-12 h-12 rounded-full bg-stone-200 text-stone-400 font-bold text-2xl flex items-center justify-center cursor-not-allowed">
+                  −
+                </button>
+                <div class="w-20 text-center">
+                  <span class="text-2xl font-extrabold text-stone-400">1 kg</span>
+                </div>
+                <button disabled class="w-12 h-12 rounded-full bg-stone-200 text-stone-400 font-bold text-2xl flex items-center justify-center cursor-not-allowed">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <!-- Disabled Pill Button -->
+            <button disabled class="w-full py-5 rounded-full bg-stone-300 text-stone-500 font-bold text-lg flex items-center justify-center cursor-not-allowed shadow-none">
+              <span>Not picking today</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Desktop Minimal Footer -->
+  <footer class="w-full max-w-7xl mx-auto px-8 py-6 text-center text-xs text-stone-500 border-t border-amber-900/5 mt-10">
+    KhetSe Direct Farm Model · No instant delivery · Soil to table within 14 hours
+  </footer>
+
+  <script>
+    const deskMinus = document.getElementById('desk-minus');
+    const deskPlus = document.getElementById('desk-plus');
+    const deskVal = document.getElementById('desk-val');
+    const deskCta = document.getElementById('desk-cta');
+    let deskQty = 1.0;
+    const pricePerKg = 40;
+
+    function updateDeskUI() {
+      deskVal.textContent = deskQty + ' kg';
+      deskCta.querySelector('span').textContent = `Add ${deskQty} kg · ₹${deskQty * pricePerKg}`;
+    }
+
+    deskMinus.addEventListener('click', () => {
+      if (deskQty > 0.5) {
+        deskQty -= 0.5;
+        updateDeskUI();
+      }
+    });
+
+    deskPlus.addEventListener('click', () => {
+      deskQty += 0.5;
+      updateDeskUI();
+    });
+
+    // Smooth tab scroll
+    const instockTab = document.getElementById('show-instock');
+    const outofstockTab = document.getElementById('show-outofstock');
+    const instockContainer = document.getElementById('instock-container');
+    const outofstockContainer = document.getElementById('outofstock-container');
+
+    instockTab.addEventListener('click', () => {
+      instockContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    outofstockTab.addEventListener('click', () => {
+      outofstockContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
