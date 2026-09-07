@@ -6,7 +6,7 @@ export default function LogoutConfirm({ open, busy = false, onClose, onConfirm, 
   if (!open) return null;
 
   const farmer = variant === 'farmer';
-
+v
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 p-0 backdrop-blur-[2px] sm:items-center sm:p-4">
       <button type="button" aria-label="Dismiss" className="absolute inset-0" onClick={onClose} />
